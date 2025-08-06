@@ -1,0 +1,17 @@
+body{
+  font-family: 'Inria Sans', Arial, sans-serif; /* Font family */
+  background-color: #F0F0F0; /* Light gray background */
+  color: #274E68; /* Dark text color */
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
+}
+
+header {
+  background-color: #E5F6DF; /* Green background */
+  border-style: solid; /* Solid border */
+  border-color: #AAC6A0; /* Darker green border */
+  border-width: 1px; /* Border width */
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
+
+}

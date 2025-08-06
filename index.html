@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CashFlow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <header>
+      <h1>Financial Overview</h1>
+      <input type="month" id="month-filter" name="month-filter">
+      <nav>
+        <a href="#" onclick="showPage('dashboard')">Dashboard</a>
+        <a href="#" onclick="showPage('spreadsheet')">Spreadsheet</a>
+      </nav>
+      <button aria-label="User Profile">
+        <img src="profile.jpg" alt="Your Profile" id="profileIcon"> <!-- Replace with actual profile image URL; supposed to show profile related menu-->
+      </button>
+    </header>
+
+    <main>
+      <section id="summaryCards">
+        <div class = "card" id="netWorth">
+          <h2>Net Worth Overview</h2>
+          <p class="text" id="netWorth">$7,335.84</p> <!--change to proper net worth calculation (no need to include investment for now or can get investment from investment spending category)-->
+        </div>
+
+        <div class = "card" id="expense-summary">
+          <h2>Expense Summary</h2>
+          <p class="total-expense">$819.07</p> <!--change to proper expense calculation(income vs expense then net revenue) and show pie chart; if clicked, it should change the breakdown. e.g. expenses is clicked -> show expenses breakdown and if income is clicked -> show income breakdown-->
+        </div>
+      </section>
+
+      <section id="breakdowns">
+        <div class="card" id="expense-breakdown">
+          <h2>Expenses Breakdown</h2>
+            <div class="expense-category">Mortgage</div>
+            <div class="expense-category">Transportation</div>
+            <div class="expense-category">Food</div>
+            <div class="expense-category">Entertainment</div>
+            <div class="expense-category">Shopping</div>
+            <div class="expense-category">Education</div>
+            <div class="expense-category">Miscellaneous</div>
+        </div>
+        <div class="card" id="income-breakdown">
+          <h2>Income Breakdown</h2>
+            <div class="income-category">Salary</div>
+            <div class="income-category">Investments</div>
+            <div class="income-category">Side Hustle</div>
+            <div class="income-category">Other Income</div>
+        </div>
+      </section>
+
+      <section class="card" id="expenses-over-time">
+        <h2>Expenses Over Time</h2>
+        <canvas id="lineChart"></canvas>
+      </section>
+
+      <section class="card" id="goal-tracker">
+        <h2>Monthly Goal</h2>
+        <canvas id="goalChart"></canvas><!-- change it to proper one like wireframe; this will show the monthly goal progress, e.g. savings goal or expense limit -->
+      </section>
+
+    </main>
+
+  </div>
+  <div>
+    <section class="sheet-view card">
+      <h2>Spreadsheet Data</h2>
+      <iframe src="https://docs.google.com/spreadsheets/d/1L1cUu9J7qaWsxkaCvOhuipENBhzqAE60JIHzEJQWGw8/edit?gid=1035620840#gid=1035620840" width="100%" height="400" frameborder="0"></iframe> <!-- Replace YOUR_SHEET_ID_HERE with the actual Google Sheets ID; this will show the spreadsheet data -->
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
