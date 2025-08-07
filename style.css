@@ -1,35 +1,84 @@
-body{
-  font-family: 'Inria Sans', Arial, sans-serif; /* Font family */
-  background-color: #F0F0F0; /* Light gray background */
-  color: #274E68; /* Dark text color */
-  margin: 0; /* No margin */
-  padding: 0; /* No padding */
+body {
+  font-family: "Inria Sans", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #274e68;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  background-color: #E5F6DF; /* Green background */
-  border-style: solid; /* Solid border */
-  border-color: #AAC6A0; /* Darker green border */
-  border-width: 1px; /* Border width */
-  margin: 0; /* No margin */
-  padding: 10px; /* No padding */
-  display: flex; /* Flexbox layout */
-  justify-content: space-between; /* Space between items */
+  background-color: #e5f6df;
+  border-style: solid;
+  border-color: #aac6a0;
+  border-width: 0px;
+  border-bottom-width: 0.2vh;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,{
   font-size: inherit;
   font-weight: inherit;
+  margin: 0.2em;
+  padding: 0;
 }
 
 a {
-  text-decoration: none; /*Removing the default text-decoration*/
-  color: inherit; /* Resetting color to inherit from parent */
+  text-decoration: none;
+  color: inherit;
 }
 
-button {
+button, input {
   border: none;
   background: none;
   cursor: pointer;
   font: inherit;
+}
+
+h1 {
+  font-size: 24px;
+  color: #22c423;
+}
+
+h2{
+  font-size: 20px;
+  color: #274e68;
+}
+
+#month-filter {
+  padding: 10px;
+  height: 3vw;
+  font-size: 1.2vw;
+  background-color: #ffffff;
+  border: #aac6a0 solid 0.2vh;
+  border-radius: 20px;
+}
+
+#tabNav {
+  font-size: 2vw;
+  height: 3vw;
+  display: flex;
+  gap: 10px;
+  background-color: #ffffff;
+  border: #aac6a0 solid 0.2vh;
+  border-radius: 20px;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+#line {
+  width: 0.2vh;
+  height: 100%;
+  background-color: #aac6a0;
+}
+
+.card{
+  background-color: #ffffff;
+  border: 0.2vh solid #aac6a0;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
 }

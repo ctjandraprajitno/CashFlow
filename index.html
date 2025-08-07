@@ -11,11 +11,12 @@
     <header>
       <h1>Financial Overview</h1>
       <input type="month" id="month-filter" name="month-filter">
-      <nav>
+      <nav id="tabNav">
         <a href="#" onclick="showPage('dashboard')">Dashboard</a>
+        <div id="line"></div>
         <a href="#" onclick="showPage('spreadsheet')">Spreadsheet</a>
       </nav>
-      <button aria-label="User Profile">
+      <button id="profileButton">
         <img src="profile.jpg" alt="Your Profile" id="profileIcon"> <!-- Replace with actual profile image URL; supposed to show profile related menu-->
       </button>
     </header>
