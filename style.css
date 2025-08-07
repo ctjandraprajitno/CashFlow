@@ -12,5 +12,24 @@ header {
   border-color: #AAC6A0; /* Darker green border */
   border-width: 1px; /* Border width */
   margin: 0; /* No margin */
-  padding: 0; /* No padding */
+  padding: 10px; /* No padding */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space between items */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  text-decoration: none; /*Removing the default text-decoration*/
+  color: inherit; /* Resetting color to inherit from parent */
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
 }
