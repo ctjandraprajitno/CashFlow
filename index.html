@@ -32,9 +32,7 @@
           <h2>Expense Summary</h2>
           <p class="total-expense">$819.07</p> <!--change to proper expense calculation(income vs expense then net revenue) and show pie chart; if clicked, it should change the breakdown. e.g. expenses is clicked -> show expenses breakdown and if income is clicked -> show income breakdown-->
         </div>
-      </section>
 
-      <section id="breakdowns">
         <div class="card" id="expense-breakdown">
           <h2>Expenses Breakdown</h2>
             <div class="expense-category">Mortgage</div>
@@ -54,12 +52,12 @@
         </div>
       </section>
 
-      <section class="card" id="expenses-over-time">
+      <section id="expenses-over-time">
         <h2>Expenses Over Time</h2>
         <canvas id="lineChart"></canvas>
       </section>
 
-      <section class="card" id="goal-tracker">
+      <section id="goal-tracker">
         <h2>Monthly Goal</h2>
         <canvas id="goalChart"></canvas><!-- change it to proper one like wireframe; this will show the monthly goal progress, e.g. savings goal or expense limit -->
       </section>
@@ -73,6 +71,5 @@
       <iframe src="https://docs.google.com/spreadsheets/d/1L1cUu9J7qaWsxkaCvOhuipENBhzqAE60JIHzEJQWGw8/edit?gid=1035620840#gid=1035620840" width="100%" height="400" frameborder="0"></iframe> <!-- Replace YOUR_SHEET_ID_HERE with the actual Google Sheets ID; this will show the spreadsheet data -->
     </section>
   </div>
-  <script src="script.js"></script>
 </body>
 </html>
